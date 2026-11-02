@@ -7,12 +7,14 @@
 ## 快速开始
 
 1. 从 [Releases](https://github.com/yxl0756/portable_msedge/releases/latest) 下载压缩包，解压到任意位置
-2. 双击Msedge\App\msedge.exe启动, 你也可以手动创建它到桌面的快捷方式
+2. 注意, 如果portable_msedge的配置目录不可写入, 它将禁用便携功能, 但其他特性不受影响
+3. 双击Msedge\App\msedge.exe启动, 你也可以手动创建它到桌面的快捷方式
 
 ## 更新
 
 1. 从 [Releases](https://github.com/yxl0756/portable_msedge/releases/latest) 下载发布的新版本
-2. 关闭Edge浏览器, 解压直接覆盖到Msedge目录。
+2. 关闭Edge浏览器, 解压直接覆盖到Msedge目录
+3. 关注msedge++(example).ini配置文件的变更, 或许我会加入便携式版本的自动更新功能
 
 ## 功能特性
 

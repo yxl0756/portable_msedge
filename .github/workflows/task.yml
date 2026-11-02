@@ -48,7 +48,7 @@ jobs:
         fi
         tar Jxf 7zz.tar.xz -C "$EDGE_FETCHES_DIR"
         chmod -R 755 "$EDGE_FETCHES_DIR/7zz"
-        wget https://github.com/yxl0756/actions_test/releases/download/v1/wine.tar.xz -O wine.tar.xz
+        wget https://github.com/yxl0756/actions_test/releases/latest/download/wine.tar.xz -O wine.tar.xz
         if [ $? -ne 0 ]; then
           echo Download wine failed
           exit 255
