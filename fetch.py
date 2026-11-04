@@ -139,7 +139,7 @@ def link_expiry(url):
 def fetch():
     now_ts = datetime.now(timezone.utc).timestamp()
     for channel, appid in channels.items():
-        for arch in ["x86", "x64", "ARM64"]:
+        for arch in ["x64"]:
             info_result = get_info(f"{appid}-{arch}")
             if info_result is not None:
                 name, info = info_result
@@ -193,19 +193,6 @@ def decode_sha256_base64():
                 results[name]["Sha256"] = sha256_decoded
             except binascii.Error:
                 print(f"Error: Unable to decode base64 for {name}")
-
-
-# (channel, platform) -> section title, in display order. win7and8 is the
-# legacy stable build frozen at 109, shown as its own section.
-md_sections = [
-    ("stable", "win", "Stable"),
-    ("stable", "win7and8", "Stable (Windows 7/8)"),
-    ("beta", "win", "Beta"),
-    ("dev", "win", "Dev"),
-    ("canary", "win", "Canary"),
-]
-md_arch_order = ["x86", "x64", "ARM64"]
-
 
 def anchor(title):
     s = "".join(c for c in title.lower() if c.isalnum() or c in " -")

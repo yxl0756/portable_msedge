@@ -10,6 +10,11 @@
 2. 注意, 如果portable_msedge的配置目录不可写入, 它将禁用便携功能, 但其他特性不受影响
 3. 双击Msedge\App\msedge.exe启动, 你也可以手动创建它到桌面的快捷方式
 
+## 安全性
+
+1. 从下载, 注入, 打包, 全程透明, 基于代码仓库内的开源脚本进行, 无暗箱操作
+2. 使用到的二进制包msedge++全部基于开源代码, 你可以到[原作者仓库](https://github.com/adonais)获取源代码
+
 ## 更新
 
 1. 从 [Releases](https://github.com/yxl0756/portable_msedge/releases/latest) 下载发布的新版本
