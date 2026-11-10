@@ -19,7 +19,7 @@
 
 1. 从 [Releases](https://github.com/yxl0756/portable_msedge/releases/latest) 下载发布的新版本
 2. 关闭Edge浏览器, 解压直接覆盖到Msedge目录
-3. 关注msedge++(example).ini配置文件的变更, 或许我会加入便携式版本的自动更新功能
+3. 默认支持自动更新, 取消更新见 msedge++(example).ini 配置文件说明
 
 ## 功能特性
 
