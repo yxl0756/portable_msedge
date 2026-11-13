@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   schedule:
-  - cron: '0 */4 * * *'
+  - cron: '36 */4 * * *'
 
 env:
   EDGE_FETCHES_DIR: /builds/worker/fetches
